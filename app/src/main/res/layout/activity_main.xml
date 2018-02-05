@@ -34,21 +34,17 @@
         android:id="@+id/id2"
         android:layout_width="24dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id1"
-        android:layout_alignBottom="@+id/id1"
+        android:layout_alignTop="@+id/id1"
         android:layout_toEndOf="@+id/id1"
-        android:gravity="center"
-         />
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/id3"
         android:layout_width="28dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id2"
-        android:layout_alignBottom="@+id/id2"
-        android:layout_toEndOf="@+id/id2"
 
-         />
+        android:layout_alignTop="@+id/id2"
+        android:layout_toEndOf="@+id/id2" />
 
     <TextView
         android:id="@+id/id4"
@@ -191,7 +187,9 @@
         android:layout_alignBaseline="@+id/id19"
         android:layout_alignBottom="@+id/id19"
         android:layout_toEndOf="@+id/id19"
+        android:gravity="center"
          />
+
     <TextView
         android:id="@+id/id21"
         android:layout_width="24dp"
@@ -199,26 +197,25 @@
         android:layout_alignBaseline="@+id/id20"
         android:layout_alignBottom="@+id/id20"
         android:layout_toEndOf="@+id/id20"
-         />
+        android:gravity="center" />
+
     <TextView
         android:id="@+id/id22"
         android:layout_width="24dp"
         android:layout_height="78dp"
         android:layout_alignBaseline="@+id/id21"
         android:layout_alignBottom="@+id/id21"
-        android:layout_toEndOf="@+id/id21"
-
-         />
+        android:layout_toStartOf="@+id/id21"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/id23"
         android:layout_width="34dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id22"
-        android:layout_alignBottom="@+id/id22"
-        android:layout_toEndOf="@+id/id22"
-
-         />
+        android:layout_alignBaseline="@+id/id21"
+        android:layout_alignBottom="@+id/id21"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
 
 
 
