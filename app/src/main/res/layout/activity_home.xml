@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_gravity="center"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.example.abdenour.engarde.Home">
+
+
+
+
+
+    <Button   android:id="@+id/NewGame" android:text="New Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:onClick="newgame"  />
+    <Button   android:id="@+id/ButtAboutgame" android:text="About Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:onClick="AboutGame"  />
+
+    <Button   android:id="@+id/ExitGame" android:text="Exit Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:onClick="Exitgame"  />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/jeuxengardemenu" />
+
+</LinearLayout>
