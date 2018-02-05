@@ -38,7 +38,7 @@ public class Joueur {
 
         APerdu=false;
         for(int i=0;i<5;i++){
-            this.mainCarte.add(piocher());
+            this.piocher();
         }
         this.score = score;
         this.caseActuelle = caseActuelle;
@@ -101,12 +101,13 @@ public class Joueur {
         }
     }
     public int AttaquerDirect(int carte,int force){
-        if(this.distanceJoueurs()==carte){
+        if(this.distanceJoueurs() == carte){
             switch (force){
                 case 1:
 
                     break;
                 case 2:
+
                     break;
                 default:Log.e("attaque non valide","nombre de cartes different de (1 ou 2)");
             }
@@ -131,15 +132,25 @@ public class Joueur {
             this.paquet[i]=5;//case 0 pour les cartes 1 ....case 4 pour les cartes de valeur 5
         }
     }
-    public int piocher(){
-        Random r=new Random();
-        int indice= r.nextInt(5);
-        if(paquet[indice]<=0){
-            return 0;
-        }else{
+
+
+    public void piocher(){
+        if( paquet.length==0){
+                //distance mediane par raport au joueur
+        }else {
+            Random r=new Random();
+            int indice= r.nextInt(5);
+            while(paquet[indice]<=0){
+                indice= r.nextInt(5);
+            }
+
             paquet[indice]--;
+
+            mainCarte.add(indice+1);
+
         }
-        return  indice+1;
+
     }
+
 
 }

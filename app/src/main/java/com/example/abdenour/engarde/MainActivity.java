@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         t23.setText("X");
         t23.setTextColor(Color.BLACK);
+        String data[]={""};
     }
 
 
