@@ -1,19 +1,36 @@
 package com.example.abdenour.engarde;
 
+
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    //
+
+
+
+    //instancce class joueur
+
+    //
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Joueur j=new Joueur(0,1,23,1);
 
+
+
+        Button Piocher = (Button)findViewById(R.id.IdPiocher);
         TextView t1 = (TextView)findViewById(R.id.id1);
         TextView t2 = (TextView)findViewById(R.id.id2);
         TextView t3 = (TextView)findViewById(R.id.id3);
@@ -40,19 +57,47 @@ public class MainActivity extends AppCompatActivity {
         TextView t23 = (TextView)findViewById(R.id.id23);
 
 
+
         t1.setText("X");
         t1.setTextColor(Color.WHITE);
 
-        t22.setText("X");
-        t22.setTextColor(Color.BLACK);
 
-        t23.setText("X");
-        t23.setTextColor(Color.BLACK);
+
+
+
+        TextView tScore = (TextView)findViewById(R.id.Score);
+
+
+        afficherCarte(j);
+
     }
 
 
+    public void GameToHome(View v){
+        Intent in = new Intent(this, Home.class);
+        startActivity(in);
+    }
+
+/*
+    public  void Piocher(View V){
+        int val = j.piocher();
 
 
+    }
 
+*/
+
+public void afficherCarte(Joueur j){
+    for (int i =0;i<j.getMain().size();i++){
+            int b = i+1;
+            String btn = "Carte" + b;
+            int res = getResources().getIdentifier(btn, "id", getPackageName());
+            Button Carte = (Button) findViewById(res);
+
+            int img = getResources().getIdentifier("carte" + j.getMain().get(i), "drawable", getPackageName());
+            Carte.setBackgroundResource(img);
+
+    }
+}
 
 }
