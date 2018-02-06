@@ -14,7 +14,7 @@ public class Joueur {
     private int score;
     private int caseActuelle;
     private int caseAdversaire;
-    private int[] paquet;
+    private  HashMap<Integer, Integer> paquet;
 
 
 
@@ -40,7 +40,7 @@ public class Joueur {
         this.caseDeDepart = maCaseDeDepart;
 
         APerdu = false;
-        paquet = new int[5];
+        paquet = new HashMap<Integer, Integer>();
         mainCarte = new ArrayList<Integer>();
 
 
@@ -55,11 +55,11 @@ public class Joueur {
 
     }
 
-    public int[] getPaquet() {
+    public HashMap<Integer, Integer> getPaquet() {
         return paquet;
     }
 
-    public void setPaquet(int[] paquet) {
+    public void setPaquet(HashMap<Integer, Integer> paquet) {
         this.paquet = paquet;
     }
     public void setMain(ArrayList<Integer> main) {
@@ -137,26 +137,30 @@ public class Joueur {
 
     }
     public void intpaquet(){
-        for (int i = 0; i < 5; i++)
-        paquet[i] = 5;
+
+        paquet.put(1,5);
+        paquet.put(2,5);
+        paquet.put(3,5);
+        paquet.put(4,5);
+        paquet.put(5,5);
         //paquet.add(1,5);paquet.add(2,5);paquet.add(3,5);paquet.add(4,5);paquet.add(5,5);
     }
 
 
     public void piocher(){
-        if( paquet.length==0){
+        if( paquet.size() == 0){
             //distance mediane par raport au joueur
         }else {
             Random r=new Random();
-            int indice = 1 + (int)(Math.random() * ((5 - 1) + 1));
-            while(paquet[indice-1] == 0){
-                indice= 1 + (int)(Math.random() * ((5 - 1) + 1));
+            int indice = 1 + (int)(Math.random() * ((4)));
+            while(paquet.get(indice) == 0){
+                indice= 1 + (int)(Math.random() * ((4)));
             }
 
+            int var = paquet.get(indice) - 1;
+            paquet.put(indice, var);
 
-            paquet[indice-1] = paquet[indice-1] - 1;
-
-            mainCarte.add(indice+1);
+            mainCarte.add(indice);
 
         }
 

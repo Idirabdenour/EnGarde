@@ -247,40 +247,54 @@
         android:onClick="GameToHome"/>
 
     <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="GameToHome"
+        android:text="Quit" />
+
+    <Button
         android:id="@+id/Carte1"
         android:layout_width="80dp"
         android:layout_height="140dp"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="32dp"
-        android:layout_toStartOf="@+id/id4" />
+        android:layout_toStartOf="@+id/id4"
+        android:onClick="clickCarte1"/>
 
     <Button
         android:id="@+id/Carte2"
         android:layout_width="80dp"
         android:layout_height="140dp"
         android:layout_alignTop="@+id/Carte1"
-        android:layout_toEndOf="@+id/Carte1" />
+        android:layout_toEndOf="@+id/Carte1"
+        android:onClick="clickCarte2"/>
 
     <Button
         android:id="@+id/Carte3"
         android:layout_width="80dp"
         android:layout_height="140dp"
         android:layout_alignTop="@+id/Carte2"
-        android:layout_toEndOf="@+id/Carte2" />
+        android:layout_toEndOf="@+id/Carte2"
+        android:onClick="clickCarte3"/>
 
     <Button
         android:id="@+id/Carte4"
         android:layout_width="80dp"
         android:layout_height="140dp"
         android:layout_alignTop="@+id/Carte3"
-        android:layout_toEndOf="@+id/Carte3" />
+        android:layout_toEndOf="@+id/Carte3"
+        android:onClick="clickCarte4"/>
 
     <Button
         android:id="@+id/Carte5"
         android:layout_width="80dp"
         android:layout_height="140dp"
         android:layout_alignTop="@+id/Carte4"
-        android:layout_toEndOf="@+id/Carte4" />
+        android:layout_toEndOf="@+id/Carte4"
+        android:onClick="clickCarte5"/>
 
     <Button
         android:id="@+id/IdPiocher"
@@ -301,12 +315,65 @@
 
     <TextView
         android:id="@+id/Score"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/id20"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/choix5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/Carte4"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/Carte3"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/id6"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/Carte1"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Carte1"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:text="" />
+
+    <Button
+        android:id="@+id/action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignEnd="@+id/id22"
-        android:layout_toEndOf="@+id/id21"
-        android:text="0" />
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:text="Action" />
 
 
 </RelativeLayout>
