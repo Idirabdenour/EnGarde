@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
         android:gravity="center"
-         />
+        android:text="" />
 
 
     <TextView
@@ -36,7 +36,8 @@
         android:layout_height="78dp"
         android:layout_alignTop="@+id/id1"
         android:layout_toEndOf="@+id/id1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:text="" />
 
     <TextView
         android:id="@+id/id3"
@@ -44,15 +45,18 @@
         android:layout_height="78dp"
 
         android:layout_alignTop="@+id/id2"
-        android:layout_toEndOf="@+id/id2" />
+        android:layout_toEndOf="@+id/id2"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/id4"
         android:layout_width="28dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id3"
+
         android:layout_alignBottom="@+id/id3"
         android:layout_toEndOf="@+id/id3"
+        android:gravity="center"
 
          />
 
@@ -60,131 +64,147 @@
         android:id="@+id/id5"
         android:layout_width="28dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id4"
+
         android:layout_alignBottom="@+id/id4"
         android:layout_toEndOf="@+id/id4"
+        android:gravity="center"
         />
 
     <TextView
         android:id="@+id/id6"
         android:layout_width="28dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id5"
+
         android:layout_alignBottom="@+id/id5"
         android:layout_toEndOf="@+id/id5"
+        android:gravity="center"
         />
 
     <TextView
         android:id="@+id/id7"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id6"
+
         android:layout_alignBottom="@+id/id6"
         android:layout_toEndOf="@+id/id6"
+        android:gravity="center"
 
-         />
+        android:text="" />
     <TextView
         android:id="@+id/id8"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id7"
+
         android:layout_alignBottom="@+id/id7"
         android:layout_toEndOf="@+id/id7"
+        android:gravity="center"
         />
 
     <TextView
         android:id="@+id/id9"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id8"
+
         android:layout_alignBottom="@+id/id8"
-        android:layout_toEndOf="@+id/id8" />
+        android:layout_toEndOf="@+id/id8"
+        android:gravity="center"/>
     <TextView
         android:id="@+id/id10"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id9"
+
         android:layout_alignBottom="@+id/id9"
         android:layout_toEndOf="@+id/id9"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id11"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id10"
+
         android:layout_alignBottom="@+id/id10"
         android:layout_toEndOf="@+id/id10"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id12"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id11"
+
         android:layout_alignBottom="@+id/id11"
         android:layout_toEndOf="@+id/id11"
+        android:gravity="center"
          />
 
     <TextView
         android:id="@+id/id13"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id12"
+
         android:layout_alignBottom="@+id/id12"
         android:layout_toEndOf="@+id/id12"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id14"
         android:layout_width="27dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id13"
+
         android:layout_alignBottom="@+id/id13"
         android:layout_toEndOf="@+id/id13"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id15"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id14"
+
         android:layout_alignBottom="@+id/id14"
         android:layout_toEndOf="@+id/id14"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id16"
         android:layout_width="23dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id15"
+
         android:layout_alignBottom="@+id/id15"
         android:layout_toEndOf="@+id/id15"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id17"
         android:layout_width="27dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id16"
+
         android:layout_alignBottom="@+id/id16"
         android:layout_toEndOf="@+id/id16"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id18"
         android:layout_width="27dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id17"
+
         android:layout_alignBottom="@+id/id17"
         android:layout_toEndOf="@+id/id17"
+        android:gravity="center"
          />
     <TextView
         android:id="@+id/id19"
         android:layout_width="27dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id18"
+
         android:layout_alignBottom="@+id/id18"
         android:layout_toEndOf="@+id/id18"
+        android:gravity="center"
+
          />
     <TextView
         android:id="@+id/id20"
         android:layout_width="27dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id19"
+
         android:layout_alignBottom="@+id/id19"
         android:layout_toEndOf="@+id/id19"
         android:gravity="center"
@@ -194,8 +214,8 @@
         android:id="@+id/id21"
         android:layout_width="24dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id20"
-        android:layout_alignBottom="@+id/id20"
+
+        android:layout_alignBottom="@+id/id19"
         android:layout_toEndOf="@+id/id20"
         android:gravity="center" />
 
@@ -203,22 +223,157 @@
         android:id="@+id/id22"
         android:layout_width="24dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id21"
-        android:layout_alignBottom="@+id/id21"
-        android:layout_toStartOf="@+id/id21"
+
+        android:layout_alignBottom="@+id/id19"
+        android:layout_toEndOf="@+id/id21"
         android:gravity="center" />
 
     <TextView
         android:id="@+id/id23"
         android:layout_width="34dp"
         android:layout_height="78dp"
-        android:layout_alignBaseline="@+id/id21"
+
         android:layout_alignBottom="@+id/id21"
         android:layout_alignParentEnd="true"
         android:gravity="center" />
 
+    <Button
+        android:id="@+id/Quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Quit"
+        android:onClick="GameToHome"/>
 
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="GameToHome"
+        android:text="Quit" />
 
+    <Button
+        android:id="@+id/Carte1"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/id4"
+        android:onClick="clickCarte1"/>
+
+    <Button
+        android:id="@+id/Carte2"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        android:layout_alignTop="@+id/Carte1"
+        android:layout_toEndOf="@+id/Carte1"
+        android:onClick="clickCarte2"/>
+
+    <Button
+        android:id="@+id/Carte3"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        android:layout_alignTop="@+id/Carte2"
+        android:layout_toEndOf="@+id/Carte2"
+        android:onClick="clickCarte3"/>
+
+    <Button
+        android:id="@+id/Carte4"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        android:layout_alignTop="@+id/Carte3"
+        android:layout_toEndOf="@+id/Carte3"
+        android:onClick="clickCarte4"/>
+
+    <Button
+        android:id="@+id/Carte5"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        android:layout_alignTop="@+id/Carte4"
+        android:layout_toEndOf="@+id/Carte4"
+        android:onClick="clickCarte5"/>
+
+    <Button
+        android:id="@+id/IdPiocher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Carte5"
+        android:layout_alignBottom="@+id/Carte5"
+        android:layout_alignStart="@+id/Quit"
+        android:text="Piocher" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/id18"
+        android:text="Score :" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/id20"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/choix5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/Carte4"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/Carte3"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/id6"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/Carte1"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/choix1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/Carte1"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:text="" />
+
+    <Button
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:text="Action" />
 
 
 </RelativeLayout>
