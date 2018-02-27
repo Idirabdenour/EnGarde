@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EnGarde</string>
+    <string name="none_found">none_found</string>
+    <string name="none_paired">none_paired</string>
+
+
+
 </resources>
