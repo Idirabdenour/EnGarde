@@ -373,7 +373,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView2"
         android:layout_alignParentBottom="true"
-        android:text="Action" />
+        android:text="Action"
+        android:onClick="send"/>
 
 
 </RelativeLayout>

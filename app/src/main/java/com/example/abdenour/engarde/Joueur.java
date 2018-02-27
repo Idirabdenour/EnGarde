@@ -1,8 +1,9 @@
+
 package com.example.abdenour.engarde;
 
 import android.util.Log;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Random;
 
 /**
@@ -10,11 +11,14 @@ import java.util.Random;
  */
 
 public class Joueur {
-    private ArrayList<Integer> mainCarte;
+    private List<Integer> mainCarte;
     private int score;
     private int caseActuelle;
     private int caseAdversaire;
-    private int[] paquet;
+    private  HashMap<Integer, Integer> paquet;
+
+
+
     private boolean APerdu;
     private int caseDeDepart;
     public boolean isAPerdu() {
@@ -34,23 +38,29 @@ public class Joueur {
     }
 
     public Joueur(int score, int caseActuelle, int posAdversaire, int maCaseDeDepart) {
-        this.caseDeDepart=maCaseDeDepart;
+        this.caseDeDepart = maCaseDeDepart;
 
-        APerdu=false;
-        for(int i=0;i<5;i++){
-            this.mainCarte.add(piocher());
-        }
+        APerdu = false;
+        paquet = new HashMap<Integer, Integer>();
+        mainCarte = new ArrayList<Integer>();
+
+
         this.score = score;
         this.caseActuelle = caseActuelle;
-        this.intpaquet();
+
         this.caseAdversaire=posAdversaire;
+        this.intpaquet();
+        for(int i=0;i<5;i++){
+            this.piocher();
+        }
+
     }
 
-    public int[] getPaquet() {
+    public HashMap<Integer, Integer> getPaquet() {
         return paquet;
     }
 
-    public void setPaquet(int[] paquet) {
+    public void setPaquet(HashMap<Integer, Integer> paquet) {
         this.paquet = paquet;
     }
     public void setMain(ArrayList<Integer> main) {
@@ -65,7 +75,7 @@ public class Joueur {
         this.caseActuelle = caseActuelle;
     }
 
-    public ArrayList<Integer> getMain() {
+    public List<Integer> getMain() {
 
         return mainCarte;
     }
@@ -101,12 +111,13 @@ public class Joueur {
         }
     }
     public int AttaquerDirect(int carte,int force){
-        if(this.distanceJoueurs()==carte){
+        if(this.distanceJoueurs() == carte){
             switch (force){
                 case 1:
 
                     break;
                 case 2:
+
                     break;
                 default:Log.e("attaque non valide","nombre de cartes different de (1 ou 2)");
             }
@@ -127,19 +138,34 @@ public class Joueur {
 
     }
     public void intpaquet(){
-        for(int i=0;i<5;i++){
-            this.paquet[i]=5;//case 0 pour les cartes 1 ....case 4 pour les cartes de valeur 5
-        }
+
+        paquet.put(1,5);
+        paquet.put(2,5);
+        paquet.put(3,5);
+        paquet.put(4,5);
+        paquet.put(5,5);
+        //paquet.add(1,5);paquet.add(2,5);paquet.add(3,5);paquet.add(4,5);paquet.add(5,5);
     }
-    public int piocher(){
-        Random r=new Random();
-        int indice= r.nextInt(5);
-        if(paquet[indice]<=0){
-            return 0;
-        }else{
-            paquet[indice]--;
+
+
+    public void piocher(){
+        if( paquet.size() == 0){
+            //distance mediane par raport au joueur
+        }else {
+            Random r=new Random();
+            int indice = 1 + (int)(Math.random() * ((4)));
+            while(paquet.get(indice) == 0){
+                indice= 1 + (int)(Math.random() * ((4)));
+            }
+
+            int var = paquet.get(indice) - 1;
+            paquet.put(indice, var);
+
+            mainCarte.add(indice);
+
         }
-        return  indice+1;
+
     }
+
 
 }
